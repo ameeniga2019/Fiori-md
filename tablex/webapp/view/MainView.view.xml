@@ -8,7 +8,53 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+					<content >
+                    <Table id="table" width="auto" class="sapUiResponsiveMargin" items="{md>/value}" growing="true" growingScrollToLoad="true">
+                    <headerToolbar>
+                    <Toolbar >
+                    <Title id="tableHeader" text="Customer details" />
+                    </Toolbar>
+                    </headerToolbar>
+                    <columns>
+                    <Column id="idColumn">
+                    <header>
+                    <Text text="ID" id="IDColumnTitle" />
+                    </header>
+                    </Column>
+                     <Column id="nameColumn">
+                    <header>
+                    <Text text="Name" id="nameColumnTitle" />
+                    </header>
+                    </Column>
+                     <Column id="titleColumn">
+                    <header>
+                    <Text text="Title" id="titleColumnTitle" />
+                    </header>
+                    </Column>
+                     <Column id="addColumn">
+                    <header>
+                    <Text text="Address" id="addColumnTitle" />
+                    </header>
+                    </Column>
+                     <Column id="phoneColumn">
+                    <header>
+                    <Text text="Phone" id="phoneColumnTitle" />
+                    </header>
+                    </Column>
+                    </columns>
+                    <items>
+                    <ColumnListItem >
+                    <cells>
+                    <ObjectIdentifier  text="{md>CustomerID}"></ObjectIdentifier>
+                    <ObjectIdentifier  text="{md>ContactName}"></ObjectIdentifier>
+                    <ObjectIdentifier  text="{md>ContactTitle}"></ObjectIdentifier>
+                    <ObjectIdentifier  text="{md>Address}"></ObjectIdentifier>
+                    <ObjectIdentifier  text="{md>Phone}"></ObjectIdentifier>
+                    </cells>
+                    </ColumnListItem>
+                    </items>
+                    </Table>
+                    </content >
 				</Page>
 			</pages>
 		</App>

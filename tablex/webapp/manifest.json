@@ -55,6 +55,10 @@
                 "settings": {
                     "bundleName": "sapui5.tb.tablex.i18n.i18n"
                 }
+            },
+            "md": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/mydata.json"
             }
         },
         "resources": {
