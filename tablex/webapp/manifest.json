@@ -80,20 +80,39 @@
             },
             "routes": [
                 {
-                    "name": "RouteMainView",
-                    "pattern": "RouteMainView",
+                    "name": "MainView",
+                    "pattern": "",
+                    "titleTarget": "TargetMainView",
+                    "greedy": false,
                     "target": [
                         "TargetMainView"
                     ]
+                },
+                {
+                    "name": "View2",
+                    "pattern": "v2",
+                    "titleTarget": "TargetView2",
+                    "greedy": false,
+                    "target": [
+                        "TargetView2"
+                    ]
                 }
+
             ],
             "targets": {
                 "TargetMainView": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "MainView",
-                    "viewName": "MainView"
+                     "viewName": "MainView",
+                     "viewLevel": 1
+                },
+                "TargetView2": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "View2",
+                    "viewLevel": 2
                 }
             }
         }

@@ -9,6 +9,7 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content >
+                    <Button text="Go to View2"  press="onPress"/>
                     <Table id="table" width="auto" class="sapUiResponsiveMargin" items="{md>/value}" growing="true" growingScrollToLoad="true">
                     <headerToolbar>
                     <Toolbar >
@@ -45,7 +46,7 @@
                     <items>
                     <ColumnListItem >
                     <cells>
-                    <ObjectIdentifier  text="{md>CustomerID}"></ObjectIdentifier>
+                    <ObjectIdentifier  text="{path: 'md>CustomerID'}" ></ObjectIdentifier>
                     <ObjectIdentifier  text="{md>ContactName}"></ObjectIdentifier>
                     <ObjectIdentifier  text="{md>ContactTitle}"></ObjectIdentifier>
                     <ObjectIdentifier  text="{md>Address}"></ObjectIdentifier>

@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="sapui5.tb.tablex.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell >
+		<App >
+			<pages>
+				<Page  title="this is View2">
+					<content >
+                    <List items = "{path: 'md>/value'}">
+                    <items>
+                    <StandardListItem 
+                    info="{md>ContactName}" 
+                    description="{md>CompanyName}"
+                    title="{
+                        parts:[{path:'md>/Address'},{path:'md>/City},{path:'md>/Country'}]
+                    }" >
+                    </StandardListItem>
+                    </items>
+                    </List>
+                     </content >
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

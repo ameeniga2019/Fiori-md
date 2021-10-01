@@ -10,6 +10,10 @@ sap.ui.define([
 		return Controller.extend("sapui5.tb.tablex.controller.MainView", {
 			onInit: function () {
 
-			}
+            },
+            onPress: function () {
+             var oRout = this.getOwnerComponent().getRouter();
+             oRout.navTo("View2");
+            }
 		});
 	});
